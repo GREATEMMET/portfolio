@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RESUME</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+        <style>
+            /* Css Resets */
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+
+            /* variables roots */
+            :root {
+                --accent1: lightgreen;
+                --accentdark: rgb(102, 208, 102);
+                --bg-color: #DDDDDD;
+                /* original color: #F3BC50; */
+
+            }
+
+            html {
+                font-size: 62.5%;
+                font-family: 'Saira', sans-serif;
+            }
+
+            body {
+                background-color: white;
+                min-height: 100vh;
+            }
+
+            .side-nav {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                background-color: var(--accent1);
+                padding: 2rem .5rem;
+                border-radius: 2rem;
+                position: absolute;
+                right: 2%;
+                top: 50%;
+                transform: translateY(-50%);
+                box-shadow: 2px 2px 10px -1px;
+                /* height: 380px; */
+
+            }
+
+            .side-nav img {
+                width: 3rem;
+            }
+
+            .side-nav a:hover img {
+                filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+
+            /* .side-nav a:active img{
+                filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
+            } */
+            .nav-resume img {
+                filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
+            }
+
+            /* page layout */
+            .two-columns {
+                display: flex;
+                /* justify-content: space-between; */
+                /* align-items: center; */
+                width: 100%;
+                min-height: 100vh;
+            }
+
+            /* column1 */
+            .column1 {
+                width: 20%;
+                font-family: 'Saira', sans-serif;
+                font-weight: 100;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+            }
+
+            .column1 img {
+                max-width: 100%;
+            }
+
+            /* left menu */
+            .menu {
+                background-color: var(--accent1);
+                flex-grow: 1;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+            }
+
+            .menu>a {
+                color: black;
+                font-weight: 500;
+                font-size: 2rem;
+                transition: all 100ms ease-in-out;
+            }
+
+            .menu .menu-resume {
+                color: white;
+            }
+
+            .menu>a:hover {
+                color: white;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+
+            .menu .spacer {
+                width: 0.8px;
+                height: 25px;
+                background-color: black;
+                position: relative;
+            }
+
+            .spacer:first-of-type::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .spacer:last-of-type::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+
+            .column2 {
+                width: 80%;
+                padding: 5% 8%;
+                background-color: var(--bg-color);
+            }
+
+            .column2>h1 {
+                border: 1px solid black;
+                text-align: center;
+                font-size: 8rem;
+                letter-spacing: 2rem;
+                padding: 2rem;
+            }
+
+            /* main content */
+            .main-content {
+                padding: 3%;
+            }
+
+            .row>.three-column {
+                display: flex;
+                gap: 5rem;
+                padding-block:5% ;
+            }
+
+            .row1>.three-column{
+                border-bottom: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="side-nav">
+            <a class="nav-home" href="./home.html"><img src="./assets/png/home.png" alt=""></a>
+            <a class="nav-about" href="./about.html"><img src="./assets/png/about.png" alt=""></a>
+            <a class="nav-resume" href="./resume.html"><img src="./assets/png/resume.png" alt=""></a>
+            <a class="nav-portfolio" href="./portfolio"><img src="./assets/png/portfolio.png" alt=""></a>
+            <a class="nav-broadcast" href="./testimonilas"><img src="./assets/png/testimonial.png" alt=""></a>
+            <a class="nav-share" href="./contact"><img src="./assets/png/share.png" alt=""></a>
+        </nav>
+
+        <div class="two-columns">
+            <div class="column column1">
+                <img src="./assets/images/profile_pic1.jpeg" alt="">
+                <div class="menu">
+                    <div class="spacer"></div>
+                    <a class="menu-home" href="./home.html">HOME</a>
+                    <div class="spacer"></div>
+                    <a class="menu-about" href="./about.html">ABOUT ME</a>
+                    <div class="spacer"></div>
+                    <a class="menu-resume" href="./resume.html">RESUME</a>
+                    <div class="spacer"></div>
+                    <a class="menu-portfolio" href="./portfolio">PORTFOLIO</a>
+                    <div class="spacer"></div>
+                    <a class="menu-testimonials" href="./testimonials">TESTIMONIALS</a>
+                    <div class="spacer"></div>
+                    <a class="menu-contact" href="./contact">CONTACT</a>
+                    <div class="spacer"></div>
+                </div>
+
+            </div>
+
+
+            <div class="column column2">
+                <h1>RESUME</h1>
+                <div class="main-content">
+                    <div class="row row1">
+                        <h1>EDUCATION</h1>
+                        <div class="three-column">
+                            <div class="column">
+                                <h3>Graphics Design</h3>
+                                <h4>Udemy Bootcamp : Youtube</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo.</p>
+                            </div>
+                            <div class="column">
+                                <h3>Web Design</h3>
+                                <h4>Udemy Bootcamp : New Horizon : FreeCodeCamp</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo.</p>
+                            </div>
+                            <div class="column">
+                                <h3>Python Development</h3>
+                                <h4>New Horizon : FreeCodeCamp</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row2">
+                        <h1>EXPERIENCE</h1>
+                        <div class="three-column">
+                            <div class="column">
+                                <h3>Project 1</h3>
+                                <h4>Children Guessing Game</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione.</p>
+                            </div>
+                            <div class="column">
+                                <h3>Project 2</h3>
+                                <h4>Portfolio</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione.</p>
+                            </div>
+                            <div class="column">
+                                <h3>Project 3</h3>
+                                <h4>USSD Network Service</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

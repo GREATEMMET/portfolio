@@ -28,7 +28,6 @@
 
             }
 
-
             html {
                 font-size: 62.5%;
             }
@@ -39,7 +38,7 @@
             }
 
             /* side navbar */
-            .side-nav{
+            .side-nav {
                 display: flex;
                 flex-direction: column;
                 gap: 3rem;
@@ -53,21 +52,25 @@
                 box-shadow: 2px 2px 10px -1px;
                 /* height: 380px; */
 
-
             }
-            .side-nav img{
+
+            .side-nav img {
                 width: 3rem;
             }
-            
-            .side-nav a:hover img{
+
+            .side-nav a:hover img {
                 filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
+                transform: scale(1.2);
+                cursor: pointer;
             }
+
             /* .side-nav a:active img{
                 filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
             } */
-            .nav-home img{
+            .nav-home img {
                 filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
             }
+
             /* page layout */
             .two-columns {
                 display: flex;
@@ -93,7 +96,7 @@
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
-                
+
             }
 
             .column1>h3 {
@@ -146,6 +149,7 @@
             .column1>a:hover {
                 background-color: var(--accentdark);
                 transform: scale(1.02);
+                cursor: pointer;
             }
 
             .column2 img {
@@ -158,11 +162,11 @@
 
     <body>
         <nav class="side-nav">
-            <a class="nav-home" href="#/"><img src="./assets/png/home.png" alt=""></a>
-            <a class="nav-about" href="#/"><img src="./assets/png/about.png" alt=""></a>
-            <a class="nav-resume" href="#/"><img src="./assets/png/resume.png" alt=""></a>
+            <a class="nav-home" href="./home.html"><img src="./assets/png/home.png" alt=""></a>
+            <a class="nav-about" href="./about.html"><img src="./assets/png/about.png" alt=""></a>
+            <a class="nav-resume" href="./resume.html"><img src="./assets/png/resume.png" alt=""></a>
             <a class="nav-portfolio" href="#/"><img src="./assets/png/portfolio.png" alt=""></a>
-            <a class="nav-broadcast" href="#/"><img src="./assets/png/broadcast.png" alt=""></a>
+            <a class="nav-broadcast" href="#/"><img src="./assets/png/testimonial.png" alt=""></a>
             <a class="nav-share" href="#/"><img src="./assets/png/share.png" alt=""></a>
         </nav>
         <div class="two-columns">
