@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ABOUT</title>
+        <title>PORTFOLIO</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500;700;800&display=swap" rel="stylesheet">
@@ -39,7 +39,6 @@
                 min-height: 100vh;
             }
 
-            /* side navbar */
             .side-nav {
                 display: flex;
                 flex-direction: column;
@@ -69,7 +68,7 @@
             /* .side-nav a:active img{
                 filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
             } */
-            .nav-about img {
+            .nav-portfolio img {
                 filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
             }
 
@@ -85,11 +84,10 @@
             /* column1 */
             .column1 {
                 position: fixed;
-                height:100%;
+                height: 100%;
                 width: 20%;
                 font-family: 'Saira', sans-serif;
                 font-weight: 100;
-
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
@@ -119,7 +117,7 @@
                 transition: all 100ms ease-in-out;
             }
 
-            .menu .menu-about {
+            .menu .menu-portfolio {
                 color: white;
             }
 
@@ -174,113 +172,72 @@
                 padding: 2rem;
             }
 
-            /* main content  */
+            /* PORTFOLIO NAVIGATION  */
             .main-content {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 7% 15% 70%;
-                column-gap: 50px;
-                row-gap: 30px;
                 padding: 3%;
+                padding-bottom: 0;
             }
 
-            .content-head {
-                grid-column: 1 / span 3;
-            }
-
-            .content-about {
-                grid-column: 1 / span 3;
-            }
-
-            .count {
-                grid-column: 1 / span 2;
-            }
-
-            .content-head {
-                font-size: 2.7rem;
-                font-weight: 300;
-            }
-
-            .content-head .code-name {
-                font-weight: 700;
-                font-size: 3.5rem;
-            }
-
-            .content-about {
-                font-size: 1.3rem;
-                font-weight: 300;
-                letter-spacing: 1.3px;
-                word-spacing: 2px
-            }
-
-            /* counts */
-            .count {
-                background-color: black;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                padding: 2.5rem;
-                border-radius: 4px;
-                box-shadow: 1px 2px 10px -1px;
-            }
-
-            .count>div>h2 {
-                color: var(--accent1);
-                font-size: 5rem;
-            }
-
-            .count>div {
+            nav.port-nav {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                color: white;
-                font-size: 1.2rem;
-                border: .5px solid white;
-            }
-
-            .count1 {
-                border-top: none !important;
-                border-left: none !important;
-                border-right: none !important;
-                margin-inline: 50px;
-            }
-
-            .count2 {
-                border-top: none !important;
-                border-right: none !important;
-                border-bottom: none !important;
-            }
-
-            .count3 {
-                border-top: none !important;
-                border-bottom: none !important;
-                border-left: none !important;
-            }
-
-            .count4 {
-                border-bottom: none !important;
-                border-left: none !important;
-                border-right: none !important;
-                margin-inline: 50px;
-            }
-
-            /* skills */
-            .skills {
-                display: flex;
-                flex-direction: column;
                 justify-content: space-between;
+                margin-inline: 13rem;
+                margin-top: 2rem;
                 gap: 1rem;
-                padding: 5px 0;
+
             }
 
-            .skills>div {
-                display: flex;
-                align-items: center;
-                gap: 10%;
+            nav.port-nav>a {
+                color: black;
+                font-weight: 700;
+                font-size: 1.6rem;
+                transition: all 100ms ease-in-out;
             }
 
-            .skills>div>img {
-                width: 10rem;
+            nav.port-nav>a:hover {
+                color: white;
+                transform: scale(1.12);
+            }
+            nav.port-nav>a:focus {
+                color: white;
+
+            }
+
+            /* porfolio content{pictures} */
+            .hide {
+                display: none !important;
+            }
+
+            .show {
+                display: grid !important;
+            }
+
+            /* All portfolio */
+            .port-all img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .grid-4by3 {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                margin-top: 2rem;
+            }
+
+            /* design / web / python portfolio */
+            .grid-2by2 {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 2rem;
+            }
+
+            .grid-2by2 img {
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
             }
         </style>
     </head>
@@ -318,66 +275,113 @@
 
 
             <div class="column column2">
-                <h1>ABOUT ME</h1>
+                <h1>PORTFOLIO</h1>
                 <div class="main-content">
-                    <h2 class="content-head">I'm <span class="code-name">Great Emmet,</span> <span
-                            class="code-profession">Software Enginner/
-                            Python Developer</span></h2>
-                    <p class="content-about">
-                        I am a frontend developer and an enthusiastic coder.. I started coding in Nov 2021 with Udemy
-                        Bootcamp, FreeCodeCamp and W3Schools and have taken several personal projects as well as project
-                        from frontendmentor.io. All projects are built from ground up, from planing and designing all
-                        the way to solving challenges with code. I look forward to future collaborations with other
-                        developers as I have also mastered git and github flow system. I am open to making as much
-                        connections as I can.
-                    </p>
-                    <div class="count">
-                        <div class="count1">
-                            <h2>15+</h2>
-                            <p>Collaborations</p>
-                        </div>
-                        <div class="count2">
-                            <h2>350+</h2>
-                            <p>Project Completed</p>
-                        </div>
-                        <div class="count3">
-                            <h2>200+</h2>
-                            <p>Happy Client</p>
-                        </div>
-                        <div class="count4">
-                            <h2>45K</h2>
-                            <p>Followers</p>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h2>What I Do!</h2>
-                        <div>
-                            <img src="./assets/png/design.png" alt="">
-                            <div>
-                                <h3>GRAPHIC DESIGNER</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ullam!</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="./assets/png/soft-engr.png" alt="">
-                            <div>
-                                <h3>SOFTWARE ENGINEER</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ullam!</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="./assets/png/python2.png" alt="">
-                            <div>
-                                <h3>PYTHON DEVELOPER</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ullam!</p>
-                            </div>
-                        </div>
+                    <nav class="port-nav">
+                        <a class="nav-all" href="#/">ALL</a>
+                        <a class="nav-design" href="#/">GRAPHIC DESIGN</a>
+                        <a class="nav-web" href="#/">WEB DESIGN</a>
+                        <a class="nav-python" href="#/">PYTHON DEVELOPMENT</a>
+                    </nav>
+
+                    <div class="port-all grid-4by3">
+                        <img src="./assets/images/alex-chumak-zGuBURGGmdY-unsplash.jpg" alt="">
+                        <img src="./assets/images/marissa-grootes-ao6N4qjR9FM-unsplash.jpg" alt="">
+                        <img src="./assets/images/shubham-dhage-Hatkch_piQM-unsplash.jpg" alt="">
+                        <img src="./assets/images/rhondak-native-florida-folk-artist-_Yc7OtfFn-0-unsplash.jpg" alt="">
+                        <img src="./assets/images/sigmund-LCun3uxh-z0-unsplash.jpg" alt="">
+                        <img src="./assets/images/hitesh-choudhary-D9Zow2REm8U-unsplash.jpg" alt="">
+                        <img src="./assets/images/amelie-mourichon-sv8oOQaUb-o-unsplash.jpg" alt="">
+                        <img src="./assets/images/daniel-korpai-pKRNxEguRgM-unsplash.jpg" alt="">
+                        <img src="./assets/images/joan-gamell-XmZ4GDAp9G0-unsplash.jpg" alt="">
+                        <img src="./assets/images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="">
+                        <img src="./assets/images/jess-bailey-l3N9Q27zULw-unsplash.jpg" alt="">
+                        <img src="./assets/images/markus-spiske-KeFyYzxqmH0-unsplash.jpg" alt="">
+
                     </div>
 
+                    <div class="port-design grid-2by2 hide">
+                        <img src="./assets/images/shubham-dhage-Hatkch_piQM-unsplash.jpg" alt="">
+                        <img src="./assets/images/jess-bailey-l3N9Q27zULw-unsplash.jpg" alt="">
+                        <img src="./assets/images/marissa-grootes-ao6N4qjR9FM-unsplash.jpg" alt="">
+                        <img src="./assets/images/rhondak-native-florida-folk-artist-_Yc7OtfFn-0-unsplash.jpg" alt="">
+                    </div>
+                    <div class="port-web grid-2by2 hide">
+                        <img src="./assets/images/sigmund-LCun3uxh-z0-unsplash.jpg" alt="">
+                        <img src="./assets/images/amelie-mourichon-sv8oOQaUb-o-unsplash.jpg" alt="">
+                        <img src="./assets/images/daniel-korpai-pKRNxEguRgM-unsplash.jpg" alt="">
+                        <img src="./assets/images/joan-gamell-XmZ4GDAp9G0-unsplash.jpg" alt="">
+                    </div>
+                    <div class="port-python grid-2by2 hide">
+                        <img src="./assets/images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="">
+                        <img src="./assets/images/alex-chumak-zGuBURGGmdY-unsplash.jpg" alt="">
+                        <img src="./assets/images/markus-spiske-KeFyYzxqmH0-unsplash.jpg" alt="">
+                        <img src="./assets/images/hitesh-choudhary-D9Zow2REm8U-unsplash.jpg" alt="">
+                    </div>
 
                 </div>
             </div>
         </div>
+
+        <script>
+            const portAll = document.querySelector('.port-all')
+            const portDesign = document.querySelector('.port-design')
+            const portWeb = document.querySelector('.port-web')
+            const portPython = document.querySelector('.port-python')
+            const navAllBtn = document.querySelector('.nav-all')
+            const navDesignBtn = document.querySelector('.nav-design')
+            const navWebBtn = document.querySelector('.nav-web')
+            const navPythonBtn = document.querySelector('.nav-python')
+
+            navAllBtn.addEventListener('click', () => {
+                portAll.classList.remove('hide')
+                portDesign.classList.remove('show')
+                portWeb.classList.remove('show')
+                portPython.classList.remove('show')
+                portAll.classList.add('show')
+                portDesign.classList.add('hide')
+                portWeb.classList.add('hide')
+                portPython.classList.add('hide')
+                
+            })
+            navDesignBtn.addEventListener('click', () => {
+                portAll.classList.remove('show')
+                portDesign.classList.remove('hide')
+                portWeb.classList.remove('show')
+                portPython.classList.remove('show')
+                portAll.classList.add('hide')
+                portDesign.classList.add('show')
+                portWeb.classList.add('hide')
+                portPython.classList.add('hide')
+                
+            })
+            navWebBtn.addEventListener('click', () => {
+                portAll.classList.remove('show')
+                portDesign.classList.remove('show')
+                portWeb.classList.remove('hide')
+                portPython.classList.remove('show')
+                portAll.classList.add('hide')
+                portDesign.classList.add('hide')
+                portWeb.classList.add('show')
+                portPython.classList.add('hide')
+                
+            })
+            navPythonBtn.addEventListener('click', () => {
+                portAll.classList.remove('show')
+                portDesign.classList.remove('show')
+                portWeb.classList.remove('show')
+                portPython.classList.remove('hide')
+                portAll.classList.add('hide')
+                portDesign.classList.add('hide')
+                portWeb.classList.add('hide')
+                portPython.classList.add('show')
+                
+            })
+
+
+
+            console.log(portAll.classList)
+        </script>
     </body>
 
 </html>

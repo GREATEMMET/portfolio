@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RESUME</title>
+        <title>CONTACT</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
             /* variables roots */
             :root {
-                --accent1: lightgreen;
+                --accent1: #90ee90;
                 --accentdark: rgb(102, 208, 102);
                 --bg-color: #DDDDDD;
                 /* original color: #F3BC50; */
@@ -68,7 +68,7 @@
             /* .side-nav a:active img{
                 filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
             } */
-            .nav-resume img {
+            .nav-contact img {
                 filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(222deg) brightness(103%) contrast(101%);
             }
 
@@ -84,7 +84,7 @@
             /* column1 */
             .column1 {
                 position: fixed;
-                height:100%;
+                height: 100%;
                 width: 20%;
                 font-family: 'Saira', sans-serif;
                 font-weight: 100;
@@ -117,7 +117,7 @@
                 transition: all 100ms ease-in-out;
             }
 
-            .menu .menu-resume {
+            .menu .menu-contact {
                 color: white;
             }
 
@@ -172,43 +172,69 @@
                 padding: 2rem;
             }
 
-            /* main content */
             .main-content {
                 padding: 3%;
             }
-            .main-content>.row{
+
+            .main-content>h1 {
+                font-weight: 300;
+                word-spacing: .5rem;
+                margin-block: 4rem;
+                font-size: 4rem;
+            }
+
+            .main-content>h1>span {
+                font-weight: 700;
+            }
+
+            .main-content>p {
+                font-size: 1.4rem;
+                font-weight: 300;
+                letter-spacing: .4rem;
+                word-spacing: .5rem;
                 margin-block: 2rem;
             }
-            .row>.three-column {
+
+            .contact-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* padding-inline: 5rem; */
+            }
+
+            .contact-card {
+                border-radius: 50%;
+                width: 10rem;
+                height: 10rem;
+                background-color: black;
                 display: flex;
-                gap: 5rem;
-                padding-block: 0 5% ;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+                margin: 2rem;
+
             }
 
-            .row1>.three-column{
-                border-bottom: 1px solid black;
+            .contact-card img {
+                width: 5rem;
+                filter: invert(94%) sepia(38%) saturate(738%) hue-rotate(49deg) brightness(96%) contrast(95%);
             }
 
-            .column h3{
-                background-color: var(--accent1);
-                display: inline-block;
-                color: white;
-                font-size: 1.4rem;
-                padding: 5px 10px;
-                margin-block: 1rem;
-                letter-spacing: .3rem;
-                border-radius: 2px;
-            }
-            .column h4{
-                font-size: 1.6rem;
-                margin-block: 1rem;
-                letter-spacing: 1px;
-                font-weight: 500;
-            }
-            .column p{
-                font-size: 1.2em;
-                font-weight: 300;
-                word-spacing: 5px;
+            .contact-text {
+                color: var(--accent1);
+                width: 15rem;
+                height: 40%;
+                background-color: black;
+                position: absolute;
+                z-index: 0;
+                right: 0;
+                transform: translateX(90%);
+                border-top-right-radius: 40px;
+                border-bottom-right-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
             }
         </style>
     </head>
@@ -246,50 +272,43 @@
 
 
             <div class="column column2">
-                <h1>RESUME</h1>
+                <h1>CONTACT</h1>
                 <div class="main-content">
-                    <div class="row row1">
-                        <h1>EDUCATION</h1>
-                        <div class="three-column">
-                            <div class="column">
-                                <h3>Graphics Design</h3>
-                                <h4>Udemy Bootcamp : Youtube</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
+                    <h1>HI THERE, IT'S <span>GREATEMMET</span> AGAIN</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti perferendis voluptatum
+                        deserunt consectetur ut numquam!</p>
+
+                    <div class="contact-container">
+                        <div class="contact-card">
+                            <img src="./assets/png/twitter.png" alt="">
+                            <div class="contact-text">
+                                <h3>TWITTER</h3>
+
                             </div>
-                            <div class="column">
-                                <h3>Web Design</h3>
-                                <h4>Udemy Bootcamp : New Horizon : FreeCodeCamp</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="contact-card">
+                            <img src="./assets/png/github.png" alt="">
+                            <div class="contact-text">
+                                <h3>GITHUB</h3>
+
                             </div>
-                            <div class="column">
-                                <h3>Python Development</h3>
-                                <h4>New Horizon : FreeCodeCamp</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nemo. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="contact-card">
+                            <img src="./assets/png/email.png" alt="">
+                            <div class="contact-text">
+                                <h3>MAIL</h3>
+
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <img src="./assets/png/linkedin.png" alt="">
+                            <div class="contact-text">
+                                <h3>LINKEDIN</h3>
+
                             </div>
                         </div>
                     </div>
-
-                    <div class="row row2">
-                        <h1>EXPERIENCE</h1>
-                        <div class="three-column">
-                            <div class="column">
-                                <h3>Project 1</h3>
-                                <h4>Children Guessing Game</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
-                            </div>
-                            <div class="column">
-                                <h3>Project 2</h3>
-                                <h4>Portfolio</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
-                            </div>
-                            <div class="column">
-                                <h3>Project 3</h3>
-                                <h4>USSD Network Service</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ratione. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    <h1 style="font-size: 2em; text-align: center;">THANKS FOR YOUR PATIENCE ...</h1>
 
                 </div>
             </div>
