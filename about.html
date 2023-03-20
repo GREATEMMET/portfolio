@@ -282,6 +282,73 @@
             .skills>div>img {
                 width: 10rem;
             }
+
+            @media screen and (max-width:550px) {
+                .column1 {
+                    display: none;
+                }
+
+                .column2 {
+                    width: 100%;
+                }
+
+                .column2>h1 {
+                    font-size: 2rem;
+                    margin-top: 5rem;
+                }
+
+                .main-content {
+                    display: block;
+                    padding: 3%;
+
+                }
+
+                .main-content>h2 {
+                    font-size: 2rem;
+                    margin-block: 2rem;
+
+                }
+
+
+                .content-about {
+                    margin-block: 2rem;
+                }
+
+                .count{
+                   display: block;
+                }
+
+                .skills {
+                    margin-block: 5rem;
+
+                }
+                .count1, .count2, .count3, .count4{
+                    border: none !important;
+                    margin-block: 3rem;
+                }
+
+                .side-nav {
+                    display: flex;
+                flex-direction: row;
+                gap: 3rem;
+                background-color: var(--accent1);
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                position: fixed;
+                top: auto;
+                right: 50%;
+                bottom: 0;
+                transform: translateX(50%);
+                /* transform: translateY(-50%); */
+                box-shadow: 2px 2px 10px -1px;
+                /* height: 380px; */
+
+                }
+
+                .side-nav img {
+                    width: 20px;
+                }
+            }
         </style>
     </head>
 
